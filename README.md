@@ -220,36 +220,19 @@ Finance/
 
 ### Isolation Forest Anomaly Detection
 
-Insert screenshot:
-
-```text
-screenshots/aapl_isolationforest.png
-```
+![Isolation Forest](screenshots/aapl_isolationforest.png)
 
 ### Autoencoder Anomaly Detection
 
-Insert screenshot:
-
-```text
-screenshots/aapl_autoencoder.png
-```
+![Autoencoder](screenshots/aapl_autoencoder.png)
 
 ### Autoencoder Training Loss
 
-Insert screenshot:
-
-```text
-screenshots/aapl_ae_loss.png
-```
+![Training Loss](screenshots/aapl_ae_loss.png)
 
 ### Dashboard
 
-Insert screenshot:
-
-```text
-screenshots/dashboard.png
-```
-
+![Dashboard](screenshots/dashboard.png)
 ---
 
 ## Generated Outputs
