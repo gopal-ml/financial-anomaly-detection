@@ -1,3 +1,7 @@
+![Python](https://img.shields.io/badge/Python-3.9+-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.8-orange)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red)
+![License](https://img.shields.io/badge/License-MIT-green)
 # Financial Anomaly Detection System
 
 ## Overview
@@ -13,6 +17,10 @@ Supported tickers:
 - NVDA
 - TSLA
 
+---
+### Dashboard
+
+![Dashboard](screenshots/dashboard.png)
 ---
 
 ## Key Features
@@ -230,9 +238,6 @@ Finance/
 
 ![Training Loss](screenshots/aapl_loss.png)
 
-### Dashboard
-
-![Dashboard](screenshots/dashboard.png)
 ---
 
 ## Generated Outputs
@@ -346,6 +351,19 @@ to ensure deterministic model training and reproducible anomaly detection result
 
 - Streamlit
 
+---
+## Results Summary
+
+The system was evaluated using three unsupervised anomaly detection models:
+
+| Model | Typical Anomalies Detected |
+|---------|---------|
+| Isolation Forest | Conservative |
+| One-Class SVM | Aggressive |
+| Autoencoder | Reconstruction-based |
+| Consensus Detector | High-confidence anomalies |
+
+The consensus detector identifies anomalies independently detected by multiple models, reducing false positives and improving reliability.
 ---
 
 ## Future Improvements
