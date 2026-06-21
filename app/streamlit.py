@@ -1,8 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
-
-
+from explain import explain_anomaly
 # ==================================================
 # PAGE CONFIG
 # ==================================================
@@ -310,6 +309,43 @@ st.dataframe(
     ],
     use_container_width=True
 )
+
+# ==========================================
+# ANOMALY EXPLANATION
+# ==========================================
+
+if len(model_anomalies) > 0:
+
+    st.subheader(
+        "Anomaly Explanation"
+    )
+
+    selected_date = st.selectbox(
+        "Select anomaly date",
+        model_anomalies["Date"]
+    )
+
+    selected_row = model_anomalies[
+        model_anomalies["Date"] == selected_date
+    ].iloc[0]
+
+    reasons = explain_anomaly(
+        selected_row
+    )
+
+    if len(reasons) > 0:
+
+        for reason in reasons:
+
+            st.write(
+                f"• {reason}"
+            )
+
+    else:
+
+        st.info(
+            "No specific explanation rules were triggered."
+        )
 
 
 # ==================================================
