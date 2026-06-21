@@ -237,16 +237,6 @@ Finance/
 
 ## Generated Outputs
 
-### Trained Models
-
-```text
-models/
-├── AAPL_autoencoder.pth
-├── AAPL_isolationforest.pkl
-├── AAPL_oneclasssvm.pkl
-└── ...
-```
-
 ### Reports
 
 ```text
@@ -282,16 +272,15 @@ reports/figures/
 
 ## Installation
 
-### Clone Repository
-
 ```bash
-git clone <repository-url>
-cd Finance
-```
+git clone https://github.com/gopal-ml/financial-anomaly-detection.git
 
-### Install Dependencies
+cd financial-anomaly-detection
 
-```bash
+python -m venv venv
+
+source venv/bin/activate
+
 pip install -r requirements.txt
 ```
 
