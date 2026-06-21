@@ -220,7 +220,7 @@ Finance/
 
 ### Isolation Forest Anomaly Detection
 
-![Isolation Forest](screenshots/aapl_isolationforest.png)
+![Isolation Forest](screenshots/aapl_iforest.png)
 
 ### Autoencoder Anomaly Detection
 
@@ -228,7 +228,7 @@ Finance/
 
 ### Autoencoder Training Loss
 
-![Training Loss](screenshots/aapl_ae_loss.png)
+![Training Loss](screenshots/aapl_loss.png)
 
 ### Dashboard
 
