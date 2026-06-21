@@ -1,0 +1,21 @@
+============================================================
+FINANCIAL ANOMALY DETECTION REPORT
+============================================================
+Ticker: MSFT
+
+MODEL RESULTS
+------------------------------------------------------------
+Isolation Forest : 1
+One-Class SVM    : 7
+Autoencoder      : 10
+
+OVERLAPS
+------------------------------------------------------------
+IForest ∩ SVM : 1
+IForest ∩ AE  : 0
+SVM ∩ AE      : 3
+All Three     : 0
+
+CONSENSUS DATES
+------------------------------------------------------------
+No consensus anomalies found.

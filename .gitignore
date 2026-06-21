@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+ml_env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data
+/data/processed/*
+
+# Models
+/models/
+
+# workspace
+Finance.code-workspace
+
+# Mac
+.DS_Store
